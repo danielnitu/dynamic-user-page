@@ -1,0 +1,80 @@
+// Colors
+$bg-black-t: rgba(0, 0, 0, .6);
+
+// Dimensions
+$avatar-width: 128px;
+$avatar-height: 128px;
+
+.main-container {
+  margin: 1% 2%;
+  padding: 1% 3%;
+  border: 0.5px rgba(0, 0, 0, .2) solid;
+}
+
+.title {
+  font-size: 16px;
+  color: #c49f47;
+  font-weight: 700;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.user-table-data {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.users-table {
+  tr th {
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+    font-family: Verdana;
+  }
+}
+
+.image-container {
+    position: relative;
+    width: $avatar-width;
+    height: $avatar-height;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+    display: block;
+    background: $bg-black-t;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.user-avatar {
+  width: $avatar-width;
+  height: $avatar-height;
+}
+
+.user-updated {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.notification {
+  background: $bg-black-t;
+  width: 200px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
